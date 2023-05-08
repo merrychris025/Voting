@@ -15,10 +15,10 @@ app.set('views','./views');
 app.set("view engine", "ejs");
 
 app.get("/vote", function(req, res){
-res.render("pages/vote", {socketURL:defURL});
+res.render("views/pages/vote", {socketURL:defURL});
 });
 app.get("/result", function(req, res){
-res.render("pages/result", {socketURL:defURL});
+res.render("views/pages/result", {socketURL:defURL});
 });
 
 io.sockets.on('connection', function(socket){
