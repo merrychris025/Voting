@@ -6,8 +6,11 @@
 	}
 	
 	body {
-		  background-image: url("img/anime.jpg");
-		  background-size: cover;
+	background-image: url("img/anime.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 		}
 	
 	.container{
@@ -22,6 +25,7 @@
 		width: 80%;
 		text-align: center;
 		padding-left: 20px;
+		padding-right: 20px;
 	}
 	
 	.left{
@@ -77,5 +81,36 @@
 		width: 130px; 
 	  	height: 70px; 
 	}
+
+	@media only screen and (max-width: 940px) {
+	.container {
+		flex-direction: column;
+		height: auto;
+		margin: 10% auto;
+		width: 90%;
+	}
+
+	.left,
+	.right {
+		width: 100%;
+	}
+
+	.left img,
+	.right img {
+		width: 100%;
+		height: auto;
+	}
+
+	p{
+		font-size: large;
+
+	}
+
+	.container button,
+	span {
+		width: 50%;
+		margin-bottom: 5%;
+	}
+}
 
 </style>
